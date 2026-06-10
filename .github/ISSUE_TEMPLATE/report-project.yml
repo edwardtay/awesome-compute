@@ -1,0 +1,30 @@
+name: Report a Project
+description: Report a broken, archived, discontinued, or misleading entry
+title: "[Review] "
+labels: ["review"]
+body:
+  - type: input
+    id: project
+    attributes:
+      label: Project
+    validations:
+      required: true
+  - type: dropdown
+    id: reason
+    attributes:
+      label: Reason
+      options:
+        - Broken link
+        - Archived or discontinued
+        - No meaningful activity
+        - Description is inaccurate
+        - Duplicate entry
+        - Wrong category
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or suggested correction
+    validations:
+      required: true

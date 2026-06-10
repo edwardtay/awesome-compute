@@ -1,0 +1,48 @@
+name: Suggest a Project
+description: Suggest a compute project or provider for the list
+title: "[Suggest] "
+labels: ["suggestion"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Project name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Official repository or product URL
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Primary category
+      options:
+        - Cluster Orchestration and Scheduling
+        - Distributed Computing
+        - Serverless and Elastic Compute
+        - GPU and AI Compute
+        - Workflow Orchestration
+        - Container and Isolation Runtimes
+        - Compute Observability
+        - Decentralized and Data-Local Compute
+        - Commercial Compute Providers
+    validations:
+      required: true
+  - type: textarea
+    id: differentiation
+    attributes:
+      label: Why should someone choose it?
+      description: Explain how it differs from the closest existing entry.
+    validations:
+      required: true
+  - type: input
+    id: maintenance
+    attributes:
+      label: Maintenance evidence
+      description: Link to a recent release, commit history, or active roadmap.
+    validations:
+      required: true

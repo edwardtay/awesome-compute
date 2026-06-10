@@ -1,0 +1,712 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-10T06:26:57.844Z",
+  "source": "GitHub REST API",
+  "repositories": {
+    "kubernetes/kubernetes": {
+      "full_name": "kubernetes/kubernetes",
+      "html_url": "https://github.com/kubernetes/kubernetes",
+      "stargazers_count": 122902,
+      "forks_count": 43181,
+      "open_issues_count": 2703,
+      "language": "Go",
+      "archived": false,
+      "pushed_at": "2026-06-10T00:29:45Z",
+      "updated_at": "2026-06-10T05:53:08Z",
+      "default_branch": "master",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "SchedMD/slurm": {
+      "full_name": "SchedMD/slurm",
+      "html_url": "https://github.com/SchedMD/slurm",
+      "stargazers_count": 4041,
+      "forks_count": 852,
+      "open_issues_count": 11,
+      "language": "C",
+      "archived": false,
+      "pushed_at": "2026-06-10T06:18:05Z",
+      "updated_at": "2026-06-10T06:18:11Z",
+      "default_branch": "master",
+      "license": {
+        "spdx_id": "NOASSERTION"
+      }
+    },
+    "hashicorp/nomad": {
+      "full_name": "hashicorp/nomad",
+      "html_url": "https://github.com/hashicorp/nomad",
+      "stargazers_count": 16588,
+      "forks_count": 2097,
+      "open_issues_count": 1644,
+      "language": "Go",
+      "archived": false,
+      "pushed_at": "2026-06-09T23:03:47Z",
+      "updated_at": "2026-06-10T03:38:51Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "NOASSERTION"
+      }
+    },
+    "volcano-sh/volcano": {
+      "full_name": "volcano-sh/volcano",
+      "html_url": "https://github.com/volcano-sh/volcano",
+      "stargazers_count": 5659,
+      "forks_count": 1398,
+      "open_issues_count": 658,
+      "language": "Go",
+      "archived": false,
+      "pushed_at": "2026-06-09T12:28:45Z",
+      "updated_at": "2026-06-10T03:35:30Z",
+      "default_branch": "master",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "htcondor/htcondor": {
+      "full_name": "htcondor/htcondor",
+      "html_url": "https://github.com/htcondor/htcondor",
+      "stargazers_count": 315,
+      "forks_count": 193,
+      "open_issues_count": 43,
+      "language": "C++",
+      "archived": false,
+      "pushed_at": "2026-06-09T23:02:22Z",
+      "updated_at": "2026-06-09T17:38:24Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "ray-project/ray": {
+      "full_name": "ray-project/ray",
+      "html_url": "https://github.com/ray-project/ray",
+      "stargazers_count": 42827,
+      "forks_count": 7665,
+      "open_issues_count": 3454,
+      "language": "Python",
+      "archived": false,
+      "pushed_at": "2026-06-10T05:45:42Z",
+      "updated_at": "2026-06-10T05:45:48Z",
+      "default_branch": "master",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "kubernetes-sigs/kueue": {
+      "full_name": "kubernetes-sigs/kueue",
+      "html_url": "https://github.com/kubernetes-sigs/kueue",
+      "stargazers_count": 2551,
+      "forks_count": 640,
+      "open_issues_count": 465,
+      "language": "Go",
+      "archived": false,
+      "pushed_at": "2026-06-09T19:39:54Z",
+      "updated_at": "2026-06-09T19:10:09Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "apache/spark": {
+      "full_name": "apache/spark",
+      "html_url": "https://github.com/apache/spark",
+      "stargazers_count": 43437,
+      "forks_count": 29219,
+      "open_issues_count": 422,
+      "language": "Scala",
+      "archived": false,
+      "pushed_at": "2026-06-10T01:10:36Z",
+      "updated_at": "2026-06-10T06:12:17Z",
+      "default_branch": "master",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "dask/dask": {
+      "full_name": "dask/dask",
+      "html_url": "https://github.com/dask/dask",
+      "stargazers_count": 13849,
+      "forks_count": 1884,
+      "open_issues_count": 1243,
+      "language": "Python",
+      "archived": false,
+      "pushed_at": "2026-06-09T22:09:57Z",
+      "updated_at": "2026-06-09T22:20:00Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "BSD-3-Clause"
+      }
+    },
+    "apache/flink": {
+      "full_name": "apache/flink",
+      "html_url": "https://github.com/apache/flink",
+      "stargazers_count": 26053,
+      "forks_count": 13947,
+      "open_issues_count": 320,
+      "language": "Java",
+      "archived": false,
+      "pushed_at": "2026-06-09T23:23:38Z",
+      "updated_at": "2026-06-09T17:14:58Z",
+      "default_branch": "master",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "apache/beam": {
+      "full_name": "apache/beam",
+      "html_url": "https://github.com/apache/beam",
+      "stargazers_count": 8609,
+      "forks_count": 4580,
+      "open_issues_count": 4068,
+      "language": "Java",
+      "archived": false,
+      "pushed_at": "2026-06-10T05:09:58Z",
+      "updated_at": "2026-06-09T22:19:29Z",
+      "default_branch": "master",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "apache/openwhisk": {
+      "full_name": "apache/openwhisk",
+      "html_url": "https://github.com/apache/openwhisk",
+      "stargazers_count": 6782,
+      "forks_count": 1179,
+      "open_issues_count": 436,
+      "language": "Scala",
+      "archived": false,
+      "pushed_at": "2026-05-07T14:42:56Z",
+      "updated_at": "2026-06-09T09:34:49Z",
+      "default_branch": "master",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "knative/serving": {
+      "full_name": "knative/serving",
+      "html_url": "https://github.com/knative/serving",
+      "stargazers_count": 6058,
+      "forks_count": 1228,
+      "open_issues_count": 157,
+      "language": "Go",
+      "archived": false,
+      "pushed_at": "2026-06-04T13:29:07Z",
+      "updated_at": "2026-06-10T06:24:29Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "openfaas/faas": {
+      "full_name": "openfaas/faas",
+      "html_url": "https://github.com/openfaas/faas",
+      "stargazers_count": 26176,
+      "forks_count": 1969,
+      "open_issues_count": 31,
+      "language": "Go",
+      "archived": false,
+      "pushed_at": "2026-04-01T14:03:53Z",
+      "updated_at": "2026-06-10T06:11:44Z",
+      "default_branch": "master",
+      "license": {
+        "spdx_id": "NOASSERTION"
+      }
+    },
+    "mpi4py/mpi4py": {
+      "full_name": "mpi4py/mpi4py",
+      "html_url": "https://github.com/mpi4py/mpi4py",
+      "stargazers_count": 914,
+      "forks_count": 134,
+      "open_issues_count": 6,
+      "language": "Python",
+      "archived": false,
+      "pushed_at": "2026-06-09T15:36:06Z",
+      "updated_at": "2026-06-09T14:27:48Z",
+      "default_branch": "master",
+      "license": {
+        "spdx_id": "BSD-3-Clause"
+      }
+    },
+    "kedacore/keda": {
+      "full_name": "kedacore/keda",
+      "html_url": "https://github.com/kedacore/keda",
+      "stargazers_count": 10273,
+      "forks_count": 1430,
+      "open_issues_count": 256,
+      "language": "Go",
+      "archived": false,
+      "pushed_at": "2026-06-08T17:57:12Z",
+      "updated_at": "2026-06-09T21:44:57Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "firecracker-microvm/firecracker": {
+      "full_name": "firecracker-microvm/firecracker",
+      "html_url": "https://github.com/firecracker-microvm/firecracker",
+      "stargazers_count": 34846,
+      "forks_count": 2435,
+      "open_issues_count": 93,
+      "language": "Rust",
+      "archived": false,
+      "pushed_at": "2026-06-08T16:56:18Z",
+      "updated_at": "2026-06-10T06:11:45Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "sgl-project/sglang": {
+      "full_name": "sgl-project/sglang",
+      "html_url": "https://github.com/sgl-project/sglang",
+      "stargazers_count": 28903,
+      "forks_count": 6432,
+      "open_issues_count": 3707,
+      "language": "Python",
+      "archived": false,
+      "pushed_at": "2026-06-10T06:20:21Z",
+      "updated_at": "2026-06-10T06:18:47Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "wasmCloud/wasmCloud": {
+      "full_name": "wasmCloud/wasmCloud",
+      "html_url": "https://github.com/wasmCloud/wasmCloud",
+      "stargazers_count": 2331,
+      "forks_count": 246,
+      "open_issues_count": 42,
+      "language": "Rust",
+      "archived": false,
+      "pushed_at": "2026-06-09T19:06:04Z",
+      "updated_at": "2026-06-09T19:07:04Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "vllm-project/vllm": {
+      "full_name": "vllm-project/vllm",
+      "html_url": "https://github.com/vllm-project/vllm",
+      "stargazers_count": 82371,
+      "forks_count": 17867,
+      "open_issues_count": 5316,
+      "language": "Python",
+      "archived": false,
+      "pushed_at": "2026-06-10T06:26:02Z",
+      "updated_at": "2026-06-10T06:17:40Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "triton-inference-server/server": {
+      "full_name": "triton-inference-server/server",
+      "html_url": "https://github.com/triton-inference-server/server",
+      "stargazers_count": 10742,
+      "forks_count": 1792,
+      "open_issues_count": 892,
+      "language": "Python",
+      "archived": false,
+      "pushed_at": "2026-06-10T05:53:00Z",
+      "updated_at": "2026-06-10T05:53:07Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "BSD-3-Clause"
+      }
+    },
+    "kserve/kserve": {
+      "full_name": "kserve/kserve",
+      "html_url": "https://github.com/kserve/kserve",
+      "stargazers_count": 5562,
+      "forks_count": 1519,
+      "open_issues_count": 706,
+      "language": "Go",
+      "archived": false,
+      "pushed_at": "2026-06-09T19:08:00Z",
+      "updated_at": "2026-06-10T04:09:43Z",
+      "default_branch": "master",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "llm-d/llm-d": {
+      "full_name": "llm-d/llm-d",
+      "html_url": "https://github.com/llm-d/llm-d",
+      "stargazers_count": 3330,
+      "forks_count": 521,
+      "open_issues_count": 292,
+      "language": "Shell",
+      "archived": false,
+      "pushed_at": "2026-06-10T05:23:09Z",
+      "updated_at": "2026-06-10T06:23:33Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "bentoml/BentoML": {
+      "full_name": "bentoml/BentoML",
+      "html_url": "https://github.com/bentoml/BentoML",
+      "stargazers_count": 8670,
+      "forks_count": 969,
+      "open_issues_count": 165,
+      "language": "Python",
+      "archived": false,
+      "pushed_at": "2026-06-03T06:48:31Z",
+      "updated_at": "2026-06-08T18:51:38Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "NVIDIA/gpu-operator": {
+      "full_name": "NVIDIA/gpu-operator",
+      "html_url": "https://github.com/NVIDIA/gpu-operator",
+      "stargazers_count": 2730,
+      "forks_count": 511,
+      "open_issues_count": 96,
+      "language": "Go",
+      "archived": false,
+      "pushed_at": "2026-06-10T03:44:54Z",
+      "updated_at": "2026-06-10T03:40:23Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "NVIDIA/Megatron-LM": {
+      "full_name": "NVIDIA/Megatron-LM",
+      "html_url": "https://github.com/NVIDIA/Megatron-LM",
+      "stargazers_count": 16647,
+      "forks_count": 4053,
+      "open_issues_count": 864,
+      "language": "Python",
+      "archived": false,
+      "pushed_at": "2026-06-10T06:15:28Z",
+      "updated_at": "2026-06-10T05:42:47Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "NOASSERTION"
+      }
+    },
+    "deepspeedai/DeepSpeed": {
+      "full_name": "deepspeedai/DeepSpeed",
+      "html_url": "https://github.com/deepspeedai/DeepSpeed",
+      "stargazers_count": 42490,
+      "forks_count": 4857,
+      "open_issues_count": 1297,
+      "language": "Python",
+      "archived": false,
+      "pushed_at": "2026-06-10T05:49:17Z",
+      "updated_at": "2026-06-10T06:08:36Z",
+      "default_branch": "master",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "PrefectHQ/prefect": {
+      "full_name": "PrefectHQ/prefect",
+      "html_url": "https://github.com/PrefectHQ/prefect",
+      "stargazers_count": 22578,
+      "forks_count": 2330,
+      "open_issues_count": 827,
+      "language": "Python",
+      "archived": false,
+      "pushed_at": "2026-06-09T09:15:26Z",
+      "updated_at": "2026-06-10T06:18:45Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "apache/airflow": {
+      "full_name": "apache/airflow",
+      "html_url": "https://github.com/apache/airflow",
+      "stargazers_count": 45761,
+      "forks_count": 17209,
+      "open_issues_count": 1692,
+      "language": "Python",
+      "archived": false,
+      "pushed_at": "2026-06-10T06:10:12Z",
+      "updated_at": "2026-06-10T06:10:19Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "dagster-io/dagster": {
+      "full_name": "dagster-io/dagster",
+      "html_url": "https://github.com/dagster-io/dagster",
+      "stargazers_count": 15656,
+      "forks_count": 2156,
+      "open_issues_count": 2653,
+      "language": "Python",
+      "archived": false,
+      "pushed_at": "2026-06-09T18:30:09Z",
+      "updated_at": "2026-06-10T02:42:28Z",
+      "default_branch": "master",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "argoproj/argo-workflows": {
+      "full_name": "argoproj/argo-workflows",
+      "html_url": "https://github.com/argoproj/argo-workflows",
+      "stargazers_count": 16757,
+      "forks_count": 3558,
+      "open_issues_count": 1439,
+      "language": "Go",
+      "archived": false,
+      "pushed_at": "2026-06-09T02:42:15Z",
+      "updated_at": "2026-06-10T02:58:12Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "snakemake/snakemake": {
+      "full_name": "snakemake/snakemake",
+      "html_url": "https://github.com/snakemake/snakemake",
+      "stargazers_count": 2811,
+      "forks_count": 652,
+      "open_issues_count": 1095,
+      "language": "Python",
+      "archived": false,
+      "pushed_at": "2026-06-09T13:24:29Z",
+      "updated_at": "2026-06-09T20:20:43Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "MIT"
+      }
+    },
+    "temporalio/temporal": {
+      "full_name": "temporalio/temporal",
+      "html_url": "https://github.com/temporalio/temporal",
+      "stargazers_count": 20865,
+      "forks_count": 1649,
+      "open_issues_count": 770,
+      "language": "Go",
+      "archived": false,
+      "pushed_at": "2026-06-10T06:05:18Z",
+      "updated_at": "2026-06-10T05:28:52Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "MIT"
+      }
+    },
+    "containerd/containerd": {
+      "full_name": "containerd/containerd",
+      "html_url": "https://github.com/containerd/containerd",
+      "stargazers_count": 20812,
+      "forks_count": 3966,
+      "open_issues_count": 635,
+      "language": "Go",
+      "archived": false,
+      "pushed_at": "2026-06-10T03:05:53Z",
+      "updated_at": "2026-06-10T04:30:02Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "cri-o/cri-o": {
+      "full_name": "cri-o/cri-o",
+      "html_url": "https://github.com/cri-o/cri-o",
+      "stargazers_count": 5620,
+      "forks_count": 1173,
+      "open_issues_count": 123,
+      "language": "Go",
+      "archived": false,
+      "pushed_at": "2026-06-10T00:41:22Z",
+      "updated_at": "2026-06-09T21:10:10Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "google/gvisor": {
+      "full_name": "google/gvisor",
+      "html_url": "https://github.com/google/gvisor",
+      "stargazers_count": 18499,
+      "forks_count": 1629,
+      "open_issues_count": 639,
+      "language": "Go",
+      "archived": false,
+      "pushed_at": "2026-06-10T03:20:57Z",
+      "updated_at": "2026-06-10T06:10:11Z",
+      "default_branch": "master",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "prometheus/prometheus": {
+      "full_name": "prometheus/prometheus",
+      "html_url": "https://github.com/prometheus/prometheus",
+      "stargazers_count": 64414,
+      "forks_count": 10492,
+      "open_issues_count": 827,
+      "language": "Go",
+      "archived": false,
+      "pushed_at": "2026-06-10T01:59:14Z",
+      "updated_at": "2026-06-10T06:01:43Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "kata-containers/kata-containers": {
+      "full_name": "kata-containers/kata-containers",
+      "html_url": "https://github.com/kata-containers/kata-containers",
+      "stargazers_count": 8045,
+      "forks_count": 1350,
+      "open_issues_count": 1602,
+      "language": "Rust",
+      "archived": false,
+      "pushed_at": "2026-06-10T04:26:55Z",
+      "updated_at": "2026-06-10T06:03:36Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "nextflow-io/nextflow": {
+      "full_name": "nextflow-io/nextflow",
+      "html_url": "https://github.com/nextflow-io/nextflow",
+      "stargazers_count": 3412,
+      "forks_count": 783,
+      "open_issues_count": 474,
+      "language": "Groovy",
+      "archived": false,
+      "pushed_at": "2026-06-10T00:16:00Z",
+      "updated_at": "2026-06-09T13:16:20Z",
+      "default_branch": "master",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "grafana/grafana": {
+      "full_name": "grafana/grafana",
+      "html_url": "https://github.com/grafana/grafana",
+      "stargazers_count": 74321,
+      "forks_count": 14041,
+      "open_issues_count": 3609,
+      "language": "TypeScript",
+      "archived": false,
+      "pushed_at": "2026-06-10T06:17:36Z",
+      "updated_at": "2026-06-10T04:48:39Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "AGPL-3.0"
+      }
+    },
+    "open-telemetry/opentelemetry-collector": {
+      "full_name": "open-telemetry/opentelemetry-collector",
+      "html_url": "https://github.com/open-telemetry/opentelemetry-collector",
+      "stargazers_count": 7121,
+      "forks_count": 2101,
+      "open_issues_count": 695,
+      "language": "Go",
+      "archived": false,
+      "pushed_at": "2026-06-09T21:29:17Z",
+      "updated_at": "2026-06-10T02:35:36Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "akash-network/provider": {
+      "full_name": "akash-network/provider",
+      "html_url": "https://github.com/akash-network/provider",
+      "stargazers_count": 175,
+      "forks_count": 66,
+      "open_issues_count": 12,
+      "language": "Go",
+      "archived": false,
+      "pushed_at": "2026-06-09T13:58:26Z",
+      "updated_at": "2026-06-02T15:10:55Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "bacalhau-project/bacalhau": {
+      "full_name": "bacalhau-project/bacalhau",
+      "html_url": "https://github.com/bacalhau-project/bacalhau",
+      "stargazers_count": 862,
+      "forks_count": 99,
+      "open_issues_count": 57,
+      "language": "Go",
+      "archived": false,
+      "pushed_at": "2026-06-10T01:22:41Z",
+      "updated_at": "2026-06-05T23:10:19Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "Apache-2.0"
+      }
+    },
+    "grafana/pyroscope": {
+      "full_name": "grafana/pyroscope",
+      "html_url": "https://github.com/grafana/pyroscope",
+      "stargazers_count": 11485,
+      "forks_count": 767,
+      "open_issues_count": 382,
+      "language": "Go",
+      "archived": false,
+      "pushed_at": "2026-06-10T01:58:02Z",
+      "updated_at": "2026-06-10T01:58:05Z",
+      "default_branch": "main",
+      "license": {
+        "spdx_id": "AGPL-3.0"
+      }
+    },
+    "golemfactory/yagna": {
+      "full_name": "golemfactory/yagna",
+      "html_url": "https://github.com/golemfactory/yagna",
+      "stargazers_count": 477,
+      "forks_count": 88,
+      "open_issues_count": 282,
+      "language": "Rust",
+      "archived": false,
+      "pushed_at": "2026-06-09T23:49:48Z",
+      "updated_at": "2026-06-08T02:19:10Z",
+      "default_branch": "master",
+      "license": {
+        "spdx_id": "GPL-3.0"
+      }
+    },
+    "learning-at-home/hivemind": {
+      "full_name": "learning-at-home/hivemind",
+      "html_url": "https://github.com/learning-at-home/hivemind",
+      "stargazers_count": 2466,
+      "forks_count": 229,
+      "open_issues_count": 96,
+      "language": "Python",
+      "archived": false,
+      "pushed_at": "2026-01-11T21:13:45Z",
+      "updated_at": "2026-06-10T03:13:43Z",
+      "default_branch": "master",
+      "license": {
+        "spdx_id": "MIT"
+      }
+    },
+    "BOINC/boinc": {
+      "full_name": "BOINC/boinc",
+      "html_url": "https://github.com/BOINC/boinc",
+      "stargazers_count": 2413,
+      "forks_count": 513,
+      "open_issues_count": 476,
+      "language": "C++",
+      "archived": false,
+      "pushed_at": "2026-06-10T03:49:40Z",
+      "updated_at": "2026-06-09T20:23:30Z",
+      "default_branch": "master",
+      "license": {
+        "spdx_id": "LGPL-3.0"
+      }
+    }
+  }
+}

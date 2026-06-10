@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 248" role="img" aria-labelledby="title desc">
+  <title id="title">Abstract compute scheduling planes</title>
+  <desc id="desc">A restrained diagram of workloads passing through queue, scheduler, and execution planes.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0d1422"/>
+      <stop offset=".58" stop-color="#141a2b"/>
+      <stop offset="1" stop-color="#1c1838"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#5eead4"/>
+    </linearGradient>
+    <pattern id="microgrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#fff" stroke-opacity=".035"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="248" rx="22" fill="url(#background)"/>
+  <rect width="1200" height="248" rx="22" fill="url(#microgrid)"/>
+  <path d="M0 0h1200v248H0z" fill="none" stroke="#fff" stroke-opacity=".07"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="2.2">
+    <text x="72" y="58" fill="#7e899b">01 / QUEUE</text>
+    <text x="72" y="124" fill="#7e899b">02 / SCHEDULE</text>
+    <text x="72" y="190" fill="#7e899b">03 / EXECUTE</text>
+  </g>
+
+  <g fill="none" stroke="#fff" stroke-opacity=".1">
+    <path d="M190 54H1128"/>
+    <path d="M190 120H1128"/>
+    <path d="M190 186H1128"/>
+  </g>
+
+  <g fill="#fff" fill-opacity=".055" stroke="#fff" stroke-opacity=".13">
+    <rect x="222" y="36" width="116" height="36" rx="8"/>
+    <rect x="358" y="36" width="76" height="36" rx="8"/>
+    <rect x="454" y="36" width="154" height="36" rx="8"/>
+    <rect x="628" y="36" width="92" height="36" rx="8"/>
+
+    <rect x="390" y="102" width="220" height="36" rx="8" fill="#a78bfa" fill-opacity=".09" stroke="#c4b5fd" stroke-opacity=".28"/>
+    <rect x="634" y="102" width="150" height="36" rx="8"/>
+
+    <rect x="566" y="168" width="92" height="36" rx="8"/>
+    <rect x="678" y="168" width="92" height="36" rx="8"/>
+    <rect x="790" y="168" width="92" height="36" rx="8"/>
+    <rect x="902" y="168" width="92" height="36" rx="8"/>
+    <rect x="1014" y="168" width="92" height="36" rx="8"/>
+  </g>
+
+  <path d="M720 54h66c42 0 42 66 84 66h44c42 0 42 66 84 66h16" fill="none" stroke="url(#accent)" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M610 120h18" stroke="#c4b5fd" stroke-width="2.5" stroke-linecap="round"/>
+
+  <g fill="#5eead4">
+    <rect x="236" y="51" width="42" height="6" rx="3" opacity=".7"/>
+    <rect x="372" y="51" width="28" height="6" rx="3" opacity=".45"/>
+    <rect x="468" y="51" width="68" height="6" rx="3" opacity=".6"/>
+    <rect x="642" y="51" width="36" height="6" rx="3" opacity=".35"/>
+  </g>
+  <g fill="#c4b5fd">
+    <rect x="406" y="117" width="116" height="6" rx="3" opacity=".72"/>
+    <rect x="650" y="117" width="64" height="6" rx="3" opacity=".42"/>
+  </g>
+  <g fill="#fff" fill-opacity=".6">
+    <rect x="580" y="183" width="36" height="6" rx="3"/>
+    <rect x="692" y="183" width="51" height="6" rx="3"/>
+    <rect x="804" y="183" width="28" height="6" rx="3"/>
+    <rect x="916" y="183" width="44" height="6" rx="3"/>
+    <rect x="1028" y="183" width="58" height="6" rx="3"/>
+  </g>
+
+  <rect x="190" y="36" width="3" height="168" rx="1.5" fill="url(#accent)"/>
+  <text x="1128" y="226" text-anchor="end" fill="#fff" fill-opacity=".34" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="2.4">AWESOME COMPUTE / FIELD GUIDE</text>
+</svg>
