@@ -280,12 +280,12 @@ Meta and xAI operate hyperscale AI infrastructure, but they are not listed as co
 ### Distributed Systems
 
 - [Designing Data-Intensive Applications](https://dataintensive.net/) - Foundations for storage, replication, partitioning, streams, and distributed tradeoffs.
-- [Distributed Systems lecture series](https://www.distributed-systems.net/index.php/courses/) - Material accompanying _Distributed Systems_ by van Steen and Tanenbaum.
+- [Distributed Systems, 4th edition](https://www.distributed-systems.net/index.php/books/ds4/) - Open textbook by Maarten van Steen and Andrew S. Tanenbaum.
 - [MIT 6.5840: Distributed Systems](https://pdos.csail.mit.edu/6.824/) - Labs and lectures covering replication, consensus, and fault tolerance.
 
 ### Kubernetes and Scheduling
 
-- [Kubernetes Documentation](https://kubernetes.io/docs/) - Concepts, tasks, APIs, and operational guidance.
+- [Kubernetes Documentation](https://kubernetes.io/docs/home/) - Concepts, tasks, APIs, and operational guidance.
 - [Kubernetes Scheduling Framework](https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/) - Extension points and scheduling internals.
 - [Slurm Documentation](https://slurm.schedmd.com/documentation.html) - Administration, scheduling, accounting, and workload commands.
 
