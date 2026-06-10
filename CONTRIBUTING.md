@@ -87,10 +87,7 @@ Automated checks verify objective rules:
 - Duplicate project URLs.
 - Internal heading links.
 - Required repository files.
-- Generated preview freshness.
-- README-to-site catalog synchronization.
 - External link health.
-- Weekly GitHub maintenance metadata snapshots.
 
 Maintainers make the editorial decision:
 

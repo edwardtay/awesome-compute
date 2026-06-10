@@ -7,7 +7,6 @@
 *.key
 *.p12
 *.pfx
-dist/
 node_modules/
 .idea/
 .vscode/

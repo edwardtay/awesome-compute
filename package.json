@@ -3,14 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "catalog:sync": "node scripts/sync-site-catalog.mjs",
-    "metadata:refresh": "node scripts/refresh-github.mjs",
-    "site:build": "npm run build && node scripts/build-site.mjs",
-    "stats:build": "node scripts/generate-stats.mjs",
     "validate": "node scripts/validate-readme.mjs",
-    "preview:build": "node scripts/render-preview.mjs",
-    "preview:serve": "python3 -m http.server 4173",
-    "build": "npm run catalog:sync && npm run validate && npm run stats:build && npm run preview:build",
-    "check": "npm run build"
+    "check": "npm run validate"
   }
 }
