@@ -57,19 +57,18 @@ for (const [heading, category] of categories) {
 if (!projects.length)
   throw new Error("No project rows were parsed from README.md.");
 
-const generated = JSON.stringify(projects, null, 2)
-  .split("\n")
-  .map((line, index) => (index ? `    ${line}` : line))
-  .join("\n");
 const catalogPattern =
-  /    const projects = \[[\s\S]*?\n    \];\n\n    const audits/;
+  /^([ \t]*)const projects = \[[\s\S]*?^\1\];\n\n^\1const audits/m;
 if (!catalogPattern.test(site))
   throw new Error("Could not locate the site catalog block.");
 
-const updated = site.replace(
-  catalogPattern,
-  `    const projects = ${generated};\n\n    const audits`,
-);
+const updated = site.replace(catalogPattern, (_, indent) => {
+  const generated = JSON.stringify(projects, null, 2)
+    .split("\n")
+    .map((line, index) => (index ? `${indent}${line}` : line))
+    .join("\n");
+  return `${indent}const projects = ${generated};\n\n${indent}const audits`;
+});
 if (updated !== site) fs.writeFileSync(sitePath, updated);
 console.log(
   `${updated === site ? "Verified" : "Synced"} ${projects.length} README projects in index.html.`,

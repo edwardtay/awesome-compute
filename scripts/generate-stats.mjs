@@ -15,7 +15,6 @@ if (!reviewed || !entries) {
 
 const projects = Number(entries[1]);
 const providers = Number(entries[2]);
-const generatedAt = new Date().toISOString();
 
 fs.mkdirSync(outputDirectory, { recursive: true });
 
@@ -23,7 +22,7 @@ const files = {
   "projects.json": { schemaVersion: 1, label: "projects", message: String(projects), color: "7657d6" },
   "providers.json": { schemaVersion: 1, label: "providers", message: String(providers), color: "087f6a" },
   "reviewed.json": { schemaVersion: 1, label: "editorially reviewed", message: reviewed, color: "111827" },
-  "snapshot.json": { projects, providers, reviewed, generatedAt }
+  "snapshot.json": { projects, providers, reviewed }
 };
 
 for (const [name, value] of Object.entries(files)) {

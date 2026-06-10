@@ -5,14 +5,15 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const source = fs.readFileSync(path.join(root, "README.md"), "utf8");
 
-const escapeHtml = value => value
-  .replaceAll("&", "&amp;")
-  .replaceAll("<", "&lt;")
-  .replaceAll(">", "&gt;")
-  .replaceAll('"', "&quot;");
+const escapeHtml = (value) =>
+  value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
 
 const slugCounts = new Map();
-const slugify = value => {
+const slugify = (value) => {
   const base = value
     .toLowerCase()
     .replace(/<[^>]+>/g, "")
@@ -31,11 +32,20 @@ function inline(value) {
     code.push(`<code>${text}</code>`);
     return `\u0000CODE${code.length - 1}\u0000`;
   });
-  output = output.replace(/!\[([^\]]*)\]\(([^)\s]+)(?:\s+"[^"]*")?\)/g, '<img src="$2" alt="$1">');
-  output = output.replace(/\[([^\]]+)\]\(([^)\s]+)(?:\s+"[^"]*")?\)/g, '<a href="$2">$1</a>');
+  output = output.replace(
+    /!\[([^\]]*)\]\(([^)\s]+)(?:\s+"[^"]*")?\)/g,
+    '<img src="$2" alt="$1">',
+  );
+  output = output.replace(
+    /\[([^\]]+)\]\(([^)\s]+)(?:\s+"[^"]*")?\)/g,
+    '<a href="$2">$1</a>',
+  );
   output = output.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
   output = output.replace(/\*([^*]+)\*/g, "<em>$1</em>");
-  output = output.replace(/\u0000CODE(\d+)\u0000/g, (_, index) => code[Number(index)]);
+  output = output.replace(
+    /\u0000CODE(\d+)\u0000/g,
+    (_, index) => code[Number(index)],
+  );
   return output;
 }
 
@@ -44,7 +54,12 @@ function isTableSeparator(line) {
 }
 
 function splitTableRow(line) {
-  return line.trim().replace(/^\|/, "").replace(/\|$/, "").split("|").map(cell => cell.trim());
+  return line
+    .trim()
+    .replace(/^\|/, "")
+    .replace(/\|$/, "")
+    .split("|")
+    .map((cell) => cell.trim());
 }
 
 const lines = source.replace(/\r\n/g, "\n").split("\n");
@@ -62,9 +77,12 @@ while (index < lines.length) {
     const language = line.slice(3).trim();
     const body = [];
     index++;
-    while (index < lines.length && !lines[index].startsWith("```")) body.push(lines[index++]);
+    while (index < lines.length && !lines[index].startsWith("```"))
+      body.push(lines[index++]);
     index++;
-    rendered.push(`<pre><code class="language-${escapeHtml(language)}">${escapeHtml(body.join("\n"))}</code></pre>`);
+    rendered.push(
+      `<pre><code class="language-${escapeHtml(language)}">${escapeHtml(body.join("\n"))}</code></pre>`,
+    );
     continue;
   }
 
@@ -74,7 +92,9 @@ while (index < lines.length) {
     const text = heading[2];
     const plain = text.replace(/!\[[^\]]*\]\([^)]+\)/g, "").trim();
     const id = slugify(plain);
-    rendered.push(`<h${level} id="${id}"><a class="anchor" href="#${id}" aria-label="Permalink">#</a>${inline(text)}</h${level}>`);
+    rendered.push(
+      `<h${level} id="${id}"><a class="anchor" href="#${id}" aria-label="Permalink">#</a>${inline(text)}</h${level}>`,
+    );
     index++;
     continue;
   }
@@ -85,14 +105,24 @@ while (index < lines.length) {
     continue;
   }
 
-  if (line.includes("|") && index + 1 < lines.length && isTableSeparator(lines[index + 1])) {
+  if (
+    line.includes("|") &&
+    index + 1 < lines.length &&
+    isTableSeparator(lines[index + 1])
+  ) {
     const headers = splitTableRow(line);
     index += 2;
     const rows = [];
-    while (index < lines.length && lines[index].includes("|") && lines[index].trim()) {
+    while (
+      index < lines.length &&
+      lines[index].includes("|") &&
+      lines[index].trim()
+    ) {
       rows.push(splitTableRow(lines[index++]));
     }
-    rendered.push(`<div class="table-scroll"><table><thead><tr>${headers.map(cell => `<th>${inline(cell)}</th>`).join("")}</tr></thead><tbody>${rows.map(row => `<tr>${headers.map((_, cellIndex) => `<td>${inline(row[cellIndex] || "")}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`);
+    rendered.push(
+      `<div class="table-scroll"><table><thead><tr>${headers.map((cell) => `<th>${inline(cell)}</th>`).join("")}</tr></thead><tbody>${rows.map((row) => `<tr>${headers.map((_, cellIndex) => `<td>${inline(row[cellIndex] || "")}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`,
+    );
     continue;
   }
 
@@ -101,7 +131,9 @@ while (index < lines.length) {
     while (index < lines.length && /^\s*[-*]\s+/.test(lines[index])) {
       items.push(lines[index++].replace(/^\s*[-*]\s+/, ""));
     }
-    rendered.push(`<ul>${items.map(item => `<li>${inline(item)}</li>`).join("")}</ul>`);
+    rendered.push(
+      `<ul>${items.map((item) => `<li>${inline(item)}</li>`).join("")}</ul>`,
+    );
     continue;
   }
 
@@ -110,13 +142,16 @@ while (index < lines.length) {
     while (index < lines.length && /^\s*\d+\.\s+/.test(lines[index])) {
       items.push(lines[index++].replace(/^\s*\d+\.\s+/, ""));
     }
-    rendered.push(`<ol>${items.map(item => `<li>${inline(item)}</li>`).join("")}</ol>`);
+    rendered.push(
+      `<ol>${items.map((item) => `<li>${inline(item)}</li>`).join("")}</ol>`,
+    );
     continue;
   }
 
   if (/^>\s?/.test(line)) {
     const body = [];
-    while (index < lines.length && /^>\s?/.test(lines[index])) body.push(lines[index++].replace(/^>\s?/, ""));
+    while (index < lines.length && /^>\s?/.test(lines[index]))
+      body.push(lines[index++].replace(/^>\s?/, ""));
     rendered.push(`<blockquote><p>${inline(body.join(" "))}</p></blockquote>`);
     continue;
   }
@@ -131,7 +166,11 @@ while (index < lines.length) {
     !/^\s*\d+\.\s+/.test(lines[index]) &&
     !/^>\s?/.test(lines[index]) &&
     !lines[index].startsWith("```") &&
-    !(lines[index].includes("|") && index + 1 < lines.length && isTableSeparator(lines[index + 1]))
+    !(
+      lines[index].includes("|") &&
+      index + 1 < lines.length &&
+      isTableSeparator(lines[index + 1])
+    )
   ) {
     paragraph.push(lines[index++].trim());
   }
@@ -144,7 +183,9 @@ const template = `<!doctype html>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Awesome Compute README Preview</title>
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; script-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://awesome.re; connect-src 'none'; frame-src 'none'; form-action 'none'; upgrade-insecure-requests">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@600;700&display=swap" rel="stylesheet">
@@ -205,7 +246,7 @@ const template = `<!doctype html>
 <body>
   <header class="topbar">
     <strong>README.md preview</strong>
-    <nav class="topbar-links"><a href="/">Resource site</a><a href="/README.md">Raw Markdown</a></nav>
+    <nav class="topbar-links"><a href="./">Resource site</a><a href="./README.md">Raw Markdown</a></nav>
   </header>
   <article class="markdown-body">${rendered.join("\n")}</article>
 </body>

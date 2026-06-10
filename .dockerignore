@@ -1,5 +1,13 @@
 .git
 .agents
 .codex
+.env
+.env.*
+*.key
+*.log
+*.p12
+*.pem
+*.pfx
+dist
 node_modules
 npm-debug.log

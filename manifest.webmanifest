@@ -2,13 +2,13 @@
   "name": "Awesome Compute",
   "short_name": "Compute",
   "description": "A curated compute field guide and awesome-list operating system.",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#fafaf9",
   "theme_color": "#7c3aed",
   "icons": [
     {
-      "src": "/favicon.svg",
+      "src": "./favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
